@@ -6,7 +6,6 @@ int	main(void)
 	size_t	cap = 0;
 	ssize_t	n;
 	char	**words = NULL;
-	int	i;
 
 	while (1)
 	{
@@ -18,12 +17,7 @@ int	main(void)
 		words = split_line(line);
 		if (!words)
 			break ;
-		i = 0;
-		while (words[i])
-		{
-			printf("[%s]\n", words[i]);
-			i++;
-		}
+		run_command(words);
 		free(words);
 	}
 	free(line);

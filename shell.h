@@ -4,7 +4,10 @@
 # include <stdio.h>
 # include <sys/types.h>
 # include <stdlib.h>
+# include <unistd.h>
+# include <sys/wait.h>
 
 char	**split_line(char *line);
+void	run_command(char **words);
 
 #endif

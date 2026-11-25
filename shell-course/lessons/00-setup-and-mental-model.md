@@ -1,5 +1,7 @@
 # Lesson 00 — Setup & mental model
 
+> [[README|Course index]] · [[01-the-read-loop|Lesson 01]] →
+
 ## Direct answer
 
 A **shell** is just a program that reads a line you typed, finds the program you asked for, runs it, waits for it to finish, and then asks for the next line. That is all. Everything else (pipes, redirections, `cd`) is built on top of this loop.
@@ -77,9 +79,9 @@ You will build these five steps, one lesson at a time:
 
 | Step | Lesson |
 |---|---|
-| Read the line | 01 |
-| Split into words | 02 |
-| Create a process, replace it, wait | 03 |
+| Read the line | [[01-the-read-loop\|01]] |
+| Split into words | [[02-splitting-a-line\|02]] |
+| Create a process, replace it, wait | [[03-running-a-program\|03]] |
 
 ---
 
@@ -91,7 +93,7 @@ You will build these five steps, one lesson at a time:
 | So how does the shell survive? | It creates a **copy of itself** first, and only the copy becomes `ls`. |
 | Why wait for the copy? | Otherwise the prompt would appear before `ls` finishes printing. |
 
-You will see that creating a copy and replacing it are **two separate operations**. That design is one of the most elegant ideas in Unix, and it is the subject of lesson 03.
+You will see that creating a copy and replacing it are **two separate operations**. That design is one of the most elegant ideas in Unix, and it is the subject of [[03-running-a-program|lesson 03]].
 
 ---
 

@@ -1,5 +1,7 @@
 # Lesson 01 — The read loop
 
+> ← [[00-setup-and-mental-model|Lesson 00]] · [[README|Course index]] · [[02-splitting-a-line|Lesson 02]] →
+
 ## Direct answer
 
 The first job of a shell is to **show a prompt, wait for a line of text, and repeat until the user quits**. In C, the safest way to read an entire line of unknown length is `getline()`: it allocates and grows the buffer for you.
